@@ -30,6 +30,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -117,20 +119,34 @@ img {
 /* Hero Section  */
 .hero-section {
   background-color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 48px;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 button {
   cursor: pointer;
   font-family: inherit;
 }
+
 .hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -146,6 +162,11 @@ button {
 
 /* Our Features */
 
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -157,6 +178,16 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -176,9 +207,15 @@ button {
 /* Our Team */
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .team-subject,
 .portfolio-subject {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 72px;
   text-transform: capitalize;
   font-size: 36px;
   line-height: 1.11;
@@ -186,19 +223,46 @@ button {
   text-align: center;
   color: #2e2f42;
 }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-subtitle {
   text-align: center;
+  padding-bottom: 8px;
 }
 .team-text {
   text-align: center;
 }
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-content {
+  padding: 32px 16px;
 }
 
 /* Our Portfolio */
+
+.portfolio-section {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 .portfolio-subtitle,
 .team-subtitle {
+  padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -211,6 +275,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.portfolio-content {
+  border-bottom: 1px solid #e7e9fc;
+  padding: 32px 16px;
 }
 
 /* Page footer */
