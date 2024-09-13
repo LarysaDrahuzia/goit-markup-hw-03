@@ -231,7 +231,6 @@ button {
 
 .team-subtitle {
   text-align: center;
-  padding-bottom: 8px;
 }
 .team-text {
   text-align: center;
@@ -289,10 +288,16 @@ button {
 }
 
 .footer-logo .logo-part {
+  display: inline-block;
+  padding-top: 100px;
+  padding-bottom: 16px;
   color: #f4f4fd;
 }
 
 .footer-text {
+  flex-wrap: wrap;
+  max-width: 264px;
+  padding-bottom: 100px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
