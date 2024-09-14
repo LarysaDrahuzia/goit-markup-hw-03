@@ -66,8 +66,8 @@ img {
   color: #4d5ae5;
 }
 .header-logo {
-  padding: 24px 0;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .header-logo .logo-part {
@@ -125,7 +125,7 @@ img {
 .hero-title {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
@@ -184,7 +184,6 @@ button {
 .features-list {
   display: flex;
   gap: 24px;
-  padding-top: 8px;
 }
 
 .features-item {
@@ -279,7 +278,8 @@ button {
 }
 
 .portfolio-content {
-  border-bottom: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
 }
 
@@ -290,7 +290,7 @@ button {
   background-color: #2e2f42;
 }
 
-.logo {
+.logo .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
